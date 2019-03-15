@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Directorio</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/materialize.min.css" >
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+</head>
+
+<body>
+        
+
+<!--Inicio sidebar-->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none;background-color: #003366;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()"> <i class="material-icons white-text">navigate_before</i></button>
+  <a href="#" class="w3-bar-item w3-button white-text">Solicitudes</a>
+  <a href="#" class="w3-bar-item w3-button white-text">Usuarios</a>
+  <a href="index.html" class="w3-bar-item w3-button white-text">Salir</a>
+</div>
+
+<div id="main">
+
+<div class="w3" style="background-color: #003366;">
+  <button id="openNav" class="w3-button w3-blue-darken w3-xlarge grey-text"  onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+  </div>
+
+</div>
+
+<img src="images/logo_uaq.png" alt="Car" style="width:30%">
+
+<div class="w3-container">
+ 
+    <div class="row"></div>
+
+   <div class="row">
+     <!--  <div class="col s7 push-s5 blue"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div> -->
+      <div class=" card-panel  lighten-4 col s12 ">
+        <h4 class="light-blue-text text-darken-4 center">ACTUALIZACIÓN DE CONTACTOS DEL DIRECTORIO INSTITUCIONAL</h4>
+        <br>
+        <br>
+          <div class="row">
+               <div class="row"> 
+                    <div class="col s2 push-s1 ">
+                   
+                    </div>      
+                    <div class="col s3 ">
+                    <a class="waves-effect waves-light green btn"><i class="material-icons left">person_add</i>Crear Contacto</a>
+                    </div>
+                    <div class="col s3 ">
+                      <a class="waves-effect waves-light light-blue btn"><i class="material-icons left">person</i>Actualizar Contacto</a>
+                    </div>
+                    <div class="col s3 ">
+                      <a class="waves-effect waves-light red btn"><i class="material-icons left">person_outline</i>Eliminar Contacto</a>
+                    </div>
+                </div>
+
+
+           </div><!--Fin sección de búsqueda-->
+      </div>
+        <div class="row">
+        <br>
+        <br>
+      </div>
+
+        <div class=" card-panel  lighten-4 col s12 ">
+        <h4 class="light-blue-text text-darken-4 center">ACTUALIZACIÓN DE DEPENDENCIAS DEL DIRECTORIO INSTITUCIONAL</h4>
+        <br>
+        <br>
+          <div class="row">
+               <div class="row"> 
+                    <div class="col s2 push-s1 ">
+                   
+                    </div>      
+                    <div class="col s3 ">
+                    <a class="waves-effect waves-light green btn"><i class="material-icons left">person_add</i>Crear Dependencia</a>
+                    </div>
+                    <div class="col s3 ">
+                      <a class="waves-effect waves-light light-blue btn"><i class="material-icons left">person</i>Actualizar Dependencia</a>
+                    </div>
+                    <div class="col s3 ">
+                      <a class="waves-effect waves-light red btn"><i class="material-icons left">person_outline</i>Eliminar Dependencia</a>
+                    </div>
+                </div>
+
+
+           </div><!--Fin sección de búsqueda-->
+      </div>
+
+      <div class="row">
+        <br>
+        <br>
+      </div>
+      <div class="row">
+
+         <h4 class="light-blue-text text-darken-4 center">MIS SOLICITUDES</h4>
+        <br>
+        <br>
+        <div class="col s10 push-s1">
+             <table  class="centered highlight responsive-table">
+              <thead>
+                <tr>
+                    <th>Tipo Solicitud</th>
+                    <th>Fecha</th>
+                    <th>Estatus</th>
+                    <th>Acciones</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Crear Contacto</td>
+                  <td>10/03/2019</td>
+                  <td>Validar</td>
+
+                </tr>
+                <tr>
+                   <td>Actualizacion Dependencia</td>
+                  <td>05/03/2019</td>
+                  <td>Pendiente Correciones</td>
+                  <td>
+                     <a class="waves-effect waves-light light-blue btn"><i class="material-icons left">edit</i></a>
+                  </td>
+                </tr>
+                <tr>
+               
+              </tbody>
+            </table>
+        </div>
+   </div>
+      </div>
+    </div>
+
+</div>
+
+</div><!--Fin sidebar-->
+
+ <!--Fin container-->
+ <!--Inicio footer-->
+
+ <!--fin footer-->
+
+</body>
+  <footer class="page-footer white">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text"></h5>
+                <p class="white-text text-lighten-4">-----------</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">--------------</h5>
+                <ul>
+                  <li><a class="white-text " href="#">----------</a></li>
+                  <li><a class="white-text" href="#">---------------</a></li>
+                  <li><a class="white-text" href="#">-------------</a></li>
+                  <li><a class="white-text" href="#">             </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container light-blue-text text-darken-4 center">
+            DITI|2019-UAQ
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+<script src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $(".dropdown-trigger").dropdown();
+  });
+    
+  </script>
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+</script>
+</html>
