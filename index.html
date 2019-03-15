@@ -18,81 +18,110 @@
 <body>
 	<!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content ">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
+  <li><a href="#!" class="grey-text">one</a></li>
+  <li><a href="#!" class="grey-text">two</a></li>
   <li class="divider"></li>
-  <li><a href="#!">three</a></li>
+  <li><a href="#!" class="grey-text">three</a></li>
 </ul>
 <nav>
-  <div class="nav-wrapper white ">
-    <a href="#!" class="brand-logo light-blue-text text-darken-4">Directorio Institucional</a>
+  <div class="nav-extended white ">
+ 
+    <img src="images/logo_uaq.png">
     <ul class="right hide-on-med-and-down">
-      <li><a class="light-blue-text" href="badges.html"><i class="material-icons">account_circle</i></a></li>
+      <li><a class="light-blue-text text-darken-4" href="login.html"><i class="material-icons">account_circle</i></a></li>
       <!-- Dropdown Trigger -->
-      <li><a class="dropdown-trigger light-blue-text" href="#!" data-target="dropdown1"><i class="material-icons right">apps</i></a></li>
+      <li><a class="dropdown-trigger light-blue-text text-darken-4 " href="#!" data-target="dropdown1"><i class="material-icons right ">apps</i></a></li>
     </ul>
   </div>
 </nav>
-        
+      <br>
+      <br>  
  <!--Fin nav bar-->
+ <div class="container">
+ 		<div class="row"></div>
 
-<div class="container">
-	<div class="row">
-		
-		<div class="col s12 m12 l9">
-			<div class="card-panel ">
-					<table class="highlight responsive-table">
+ 	 <div class="row">
+     <!--  <div class="col s7 push-s5 blue"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div> -->
+      <div class=" card-panel white lighten-4 col s12 ">
+      	<h6 class="light-blue-text text-darken-4">Búsqueda</h6>
+      	<br>
+   		<div class="row">
+   			   <div class="row">
+   			   		<div class="col s1 white">
+   			   			
+   			   		</div>
+			      <div class="col s2 white ">
+			      	<label for="first_name">Nombre</label>
+			      	<input id="first_name" type="text" class="validate">
+       			   
+			      </div>
+			      <div class="col s2 white ">
+			      	<label for="first_name">Cargo</label>
+			      	<input id="first_name" type="text" class="validate">
+                    
+			      </div>
+			      <div class="col s2 white ">
+			      	<label for="first_name">Extensión</label>
+			      	<input  id="first_name" type="text" class="validate">
+          			
+			      </div>
+			      <div class="col s2 white ">
+			      	<label for="first_name">Área</label>
+			      	<input id="first_name" type="text" class="validate">
+			      </div>
+			      <div class="col s1 white  ">
+			      	<a href="" class="white-text">-</a>
+			      	<a class="waves-effect waves-light blue btn"><i class="material-icons left">search</i></a>
+			      </div>
+			      <div class="col s1 white  ">
+			      	<a href="" class="white-text">-</a>
+			      	<a class="waves-effect waves-light red btn"><i class="material-icons left">close</i></a>
+			      </div>
+
+			 </div>
+   		</div>
+
+   		<div class="row">
+   			<div class="col s12 white">
+      			 <table class="highlight centered responsive-table">
 			        <thead>
 			          <tr>
-			              <th>Name</th>
-			              <th>Item Name</th>
-			              <th>Item Price</th>
+			              <th>Nombre</th>
+			              <th>Cargo</th>
+			              <th>Extensión</th>
 			          </tr>
 			        </thead>
 
 			        <tbody>
 			          <tr>
 			            <td>Alvin</td>
-			            <td>Eclair</td>
-			            <td>$0.87</td>
+			            <td>Director de Área</td>
+			            <td>3569</td>
 			          </tr>
 			          <tr>
 			            <td>Alan</td>
-			            <td>Jellybean</td>
-			            <td>$3.76</td>
+			            <td>Coordinador de Área</td>
+			            <td>7758</td>
 			          </tr>
 			          <tr>
 			            <td>Jonathan</td>
 			            <td>Lollipop</td>
-			            <td>$7.00</td>
+			            <td>4479</td>
 			          </tr>
 			        </tbody>
-			      </table>
-            
-			</div>
-		</div>
-		
-		
-	</div>
-</div>
-
-<!--   <div class="row">
-
-      <div class="col s4 m4 l3">
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+			      </table>   
+   			</div>
+   			
+   		</div>
       </div>
-      <div class="col s4 m4 l3">
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-      </div>
-      <div class="col s4 m4 l3">
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-      </div>
+    </div>
+ 	
+ </div> <!--div container-->
+	
 
-    </div> -->
+</body>
 
-<!--Zona Scripts-->
-
-	<script src="js/materialize.min.js"></script>
+<script src="js/materialize.min.js"></script>
 	<script type="text/javascript">
 		 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -106,5 +135,6 @@
   });
 		
 	</script>
-</body>
+
+
 </html>
