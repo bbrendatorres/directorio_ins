@@ -311,7 +311,7 @@
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
-       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+       <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
     </div>
   </div>
 
@@ -374,7 +374,7 @@
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
-       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+       <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
     </div>
   </div>
 
@@ -431,7 +431,7 @@
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
-       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+       <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
     </div>
   </div>
 
@@ -442,12 +442,69 @@
   <!-- Modal Structure -->
   <div id="modal5" class="modal">
     <div class="modal-content">
-      <h4>Actualizar Dependencia</h4>
-      <p>A bunch of text</p>
+       <h4>Actualizar Dependencia</h4>
+      <p>Actualización Directorio Institucional (http://directorio.uaq.mx) 2019-1.</p>
+<p>Para modificar una Área o Coordinación Institucional favor de llenar los campos que apliquen.</p>
+
+           <form class="col s12">
+           <div class="row">
+                <div class=" push-s1 input-field col s6" place>
+                <select>
+                  <option value="" disabled selected><i>Seleccione. </i></option>
+                  <option value="1">Rectoría</option>
+                  <option value="2">Secretaría Académica</option>
+                  <option value="3">Secretaría Administrativa</option>
+                  <option value="4">Secretaría de Contraloría</option>
+                  <option value="5">Secretaría de Extensión Universitaria</option>
+                </select>
+                <label>*Área o Unidad a Actualizar</label>
+              </div>
+                <div class="push-s1 input-field col s10">
+                  <input  id="area" type="text" class="validate">
+                  <label for="area">Nombre del área, unidad o subunidad administrativa:</label>
+                </div>
+            </div>
+
+          <div class="row">
+                  <div class=" push-s1 input-field col s5">
+                    <input  id="url" type="text" class="validate">
+                    <label for="url">URL página web:</label>
+                  </div>
+                  <div class=" push-s1 input-field col s5">
+                    <input id="horario" type="text" class="validate">
+                    <label for="horario">*Horario de servicio:</label>
+                  </div>
+          </div>
+
+          <div class="row">
+                  <div class=" push-s1 input-field col s10">
+                    <input  id="correo" type="text" class="validate">
+                    <label for="correo">Correo principal del área o coordinación:</label>
+                  </div>
+          </div>
+
+            <div class="row">
+            
+                <div class=" push-s1 input-field col s4">
+                  <input id="ext" type="text" class="validate">
+                  <label for="ext">*Extensión principal:</label>
+                </div>
+                 <div class=" push-s1 input-field col s6" place>
+                <select>
+                  <option value="" disabled selected><i>Seleccione </i></option>
+                  <option value="1">San Juan del Río, 10000</option>
+                  <option value="2">Cerro de las Campanas, 76000</option>
+                  <option value="3">La Capilla, 76176 </option>
+                </select>
+                <label>*Ubicación</label>
+              </div>
+          </div>
+
+        </form>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
-       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+       <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
     </div>
   </div>
 
@@ -459,13 +516,55 @@
   <div id="modal6" class="modal">
     <div class="modal-content">
       <h4>Eliminar Dependencia</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
-       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
-    </div>
-  </div>
+        <p>Para Eliminar una Área o Coordinación Institucional favor de llenar los campos que apliquen.
+Recuerde que todos los registros son monitoreados, además de quedar guardado el usuario que ha realizado la solicitud, por favor proceda con precaución. </p>
+       <div class="row">
+        <br>
+        <form class="col s12">
+           <div class="row">
+                 <div class=" push-s1 input-field col s6" place>
+                <select>
+                  <option value="" disabled selected><i>Seleccione. </i></option>
+                  <option value="1">Rectoría</option>
+                  <option value="2">Secretaría Académica</option>
+                  <option value="3">Secretaría Administrativa</option>
+                  <option value="4">Secretaría de Contraloría</option>
+                  <option value="5">Secretaría de Extensión Universitaria</option>
+                </select>
+                <label>*Área o Unidad a Actualizar</label>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class=" push-s1 input-field col s4">
+                  <input id="ext" type="text" class="validate">
+                  <label for="ext">*Extensión:</label>
+                </div>
+                 <div class=" push-s1 input-field col s6" place>
+                <select>
+                  <option value="" disabled selected><i>Seleccione </i></option>
+                  <option value="1">Cambio Ubicación</option>
+                  <option value="2">Año Sabáticp</option>
+                  <option value="4">Baja Nómina</option>
+                </select>
+                <label>*Justificación</label>
+              </div>
+          </div>
+
+          <div class="rows">
+            <div class="push-s1 input-text-area col s10">
+               <label for="coment">*Comentarios:</label>
+               <textarea id="coment" name="comentarios" rows="10" cols="12">Escribe aquí tus comentarios</textarea>   
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+          </div>
+    </form>
+   </div>
+</div>
+</div>
 
  <!--Fin Modal eliminar dep-->
  <!--Inicio footer-->
