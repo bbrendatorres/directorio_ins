@@ -12,10 +12,10 @@
 <body>
 		<!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content ">
-  <li><a href="#!" class="grey-text">Como llamar</a></li>
-  <li><a href="#!" class="grey-text">Actualizar contacto</a></li>
+  <li><a href="#modal1" class="modal-trigger grey-text">Como llamar</a></li>
+  <li><a href="#modal2" class="modal-trigger grey-text">Actualizar Directorio</a></li>
   <li class="divider"></li>
-  <li><a href="#!" class="grey-text">Contacto</a></li>
+  <li><a href="#modal3" class="modal-trigger grey-text">Contacto</a></li>
 </ul>
 <nav>
   <div class="nav-wrapper white ">
@@ -71,6 +71,40 @@
 
  <!--fin footer-->
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Cómo llamar a la UAQ</h4>
+      <p>Marca al teléfono (442) 192-12-00, escucha el mensaje de bienvenida del conmutador y marca la extensión del contacto deseado.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Entendido</a>
+    </div>
+  </div>	
+
+   <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Actualizar Directorio</h4>
+      <p>Mantener el directorio institucional al dia es una tarea en la que puedes apoyar a tu Universidad. Actualizar contacto.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Entendido</a>
+    </div>
+  </div>	
+
+   <!-- Modal Structure -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Contacto</h4>
+      <p>Contacta la Coordinación de Telefonía IP o con los administradores de este sitio.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Entendido</a>
+    </div>
+  </div>	
+
+
 </body>
   <footer class="page-footer white">
           <div class="container">
@@ -108,6 +142,18 @@
 
   $(document).ready(function(){
     $(".dropdown-trigger").dropdown();
+  });
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
   });
 		
 	</script>
