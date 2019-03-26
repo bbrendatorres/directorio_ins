@@ -1,5 +1,0 @@
-<?php 
-$usuario="root";
-$contrasena
-
- ?>
