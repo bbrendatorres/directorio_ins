@@ -1,5 +1,5 @@
 <?php
-include("\directorio_ins\php\principal.php");
+include("conexion.php");
 $con=conectar();
 echo "Se realizo exitosamente la conexión";
 ?>
