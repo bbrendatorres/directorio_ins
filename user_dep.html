@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Directorio</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/materialize.min.css" >
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+</head>
+
+<body>
+        
+
+<!--Inicio sidebar-->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none;background-color: #003366;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()"> <i class="material-icons white-text">navigate_before</i></button>
+  <a href="perfil_res.html" class="w3-bar-item w3-button white-text">Perfil</a>
+  <a href="user_con.html" class="w3-bar-item w3-button white-text">Contactos</a>
+  <a href="index.html" class="w3-bar-item w3-button white-text">Salir</a>
+</div>
+
+<div id="main">
+
+<div class="w3" style="background-color: #003366;">
+  <button id="openNav" class="w3-button w3-blue-darken w3-xlarge grey-text"  onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+  </div>
+
+</div>
+
+<img src="images/logo_uaq.png" alt="Car" style="width:30%">
+
+<div class="w3-container">
+ 
+    <div class="row ">
+      <div class="row">
+        <br>
+        <br>
+      </div>
+      <div class=" card-panel  lighten-4 col s10 push-s1">
+        <br>
+        <h4 class="light-blue-text text-darken-4 center">ACTUALIZACIÓN DE DEPENDENCIAS DEL DIRECTORIO INSTITUCIONAL</h4>
+        <br>
+          <div class="row">
+        <br>
+        <div class="col s3 push-s9 ">
+            <button data-target="modal5" class="btn modal-trigger waves-effect waves-light light-blue btn"><i class="material-icons left">person</i>Actualizar</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col s10 push-s1">
+             <table  class="centered highlight responsive-table">
+              <thead>
+                <tr>
+                    <th>Tipo Solicitud</th>
+                    <th>Fecha</th>
+                    <th>Estatus</th>
+                    <th>Acciones</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Crear Contacto</td>
+                  <td>10/03/2019</td>
+                  <td>Validar</td>
+
+                </tr>
+                <tr>
+                   <td>Actualizacion Dependencia</td>
+                  <td>05/03/2019</td>
+                  <td>Pendiente Correciones</td>
+                  <td>
+                     <a class="waves-effect waves-light light-blue btn"><i class="material-icons left">edit</i></a>
+                  </td>
+                </tr>
+                <tr>
+               
+              </tbody>
+            </table>
+        </div>
+       </div>
+      </div>
+
+      </div><!--Fin rowprincipal-->
+    </div> <!--Fin divcontainer-->
+
+</div>
+
+</div><!--Fin sidebar-->
+
+
+
+<!--Inicio Modal crear dep-->
+
+  
+
+ <!--Inicio Modal actualizar dep-->
+
+  <!-- Modal Structure -->
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+       <h4>Actualizar Dependencia</h4>
+      <p>Actualización Directorio Institucional (http://directorio.uaq.mx) 2019-1.</p>
+<p>Para modificar una Área o Coordinación Institucional favor de llenar los campos que apliquen.</p>
+
+           <form class="col s12">
+           <div class="row">
+                <div class=" push-s1 input-field col s6" place>
+                <select>
+                  <option value="" disabled selected><i>Seleccione. </i></option>
+                  <option value="1">Rectoría</option>
+                  <option value="2">Secretaría Académica</option>
+                  <option value="3">Secretaría Administrativa</option>
+                  <option value="4">Secretaría de Contraloría</option>
+                  <option value="5">Secretaría de Extensión Universitaria</option>
+                </select>
+                <label>*Área o Unidad a Actualizar</label>
+              </div>
+                <div class="push-s1 input-field col s10">
+                  <input  id="area" type="text" class="validate">
+                  <label for="area">Nombre del área, unidad o subunidad administrativa:</label>
+                </div>
+            </div>
+
+          <div class="row">
+                  <div class=" push-s1 input-field col s5">
+                    <input  id="url" type="text" class="validate">
+                    <label for="url">URL página web:</label>
+                  </div>
+                  <div class=" push-s1 input-field col s5">
+                    <input id="horario" type="text" class="validate">
+                    <label for="horario">*Horario de servicio:</label>
+                  </div>
+          </div>
+
+          <div class="row">
+                  <div class=" push-s1 input-field col s10">
+                    <input  id="correo" type="text" class="validate">
+                    <label for="correo">Correo principal del área o coordinación:</label>
+                  </div>
+          </div>
+
+            <div class="row">
+            
+                <div class=" push-s1 input-field col s4">
+                  <input id="ext" type="text" class="validate">
+                  <label for="ext">*Extensión principal:</label>
+                </div>
+                 <div class=" push-s1 input-field col s6" place>
+                <select>
+                  <option value="" disabled selected><i>Seleccione </i></option>
+                  <option value="1">San Juan del Río, 10000</option>
+                  <option value="2">Cerro de las Campanas, 76000</option>
+                  <option value="3">La Capilla, 76176 </option>
+                </select>
+                <label>*Ubicación</label>
+              </div>
+          </div>
+
+        </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
+       <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+    </div>
+  </div>
+
+ <!--Fin Modal actualizar dep-->
+
+
+ <!--Inicio footer-->
+
+ <!--fin footer-->
+
+</body>
+  <footer class="page-footer white">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text"></h5>
+                <p class="white-text text-lighten-4">-----------</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">--------------</h5>
+                <ul>
+                  <li><a class="white-text " href="#">----------</a></li>
+                  <li><a class="white-text" href="#">---------------</a></li>
+                  <li><a class="white-text" href="#">-------------</a></li>
+                  <li><a class="white-text" href="#">             </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container light-blue-text text-darken-4 center">
+            DITI|2019-UAQ
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+<script src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $(".dropdown-trigger").dropdown();
+  });
+    
+  </script>
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+        
+</script>
+</html>
